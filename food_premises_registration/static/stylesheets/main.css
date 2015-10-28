@@ -222,6 +222,10 @@ ul.accordion {
   padding: 5px 10px 5px 0px;
 }
 
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em)  {
   fieldset.filters {
     margin: 1.125rem 0;
