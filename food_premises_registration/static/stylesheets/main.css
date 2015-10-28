@@ -8,6 +8,90 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.section-row {
+  margin-top: 45px;
+}
+
+.inline .block-label {
+    clear: none;
+    margin-right: 10px;
+}
+@media (min-width: 641px)
+.block-label {
+    float: left;
+}
+.block-label {
+    display: block;
+    float: left;
+    clear: left;
+    position: relative;
+    background: #dee0e2;
+    border: 1px solid #dee0e2;
+    padding: 18px 30px 15px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+}
+
+.hint {
+  margin-bottom: 10px;
+}
+
+.form-checkbox {
+    display: block;
+    margin: 15px 0;
+    clear: left;
+}
+
+.form-checkbox input {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    cursor: pointer;
+    margin: 0;
+    width: 29px;
+    height: 29px;
+}
+
+
+.form-heading {
+  font-size: 19px;
+  font-weight: 700;
+  margin-top: 40px;
+}
+
+.premises-form-label {
+  font-size: 19px;
+  font-weight: 700;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  color: black;
+}
+
+.button {
+  font-size: 14px;
+  padding-top: 11px;
+  padding-bottom: 10px;
+  background-color: gray;
+}
+
+
+
+#radio-inline-1 {
+  margin-right: 15px;
+}
+#radio-inline-2 {
+  margin-right: 15px;
+}
+
 .heading-medium {
   font-size: 24px;
   line-height: 1.25;
@@ -59,10 +143,11 @@ div#loading p {
 }
 
 fieldset.filters {
-  border: 2px solid #DDD;
+  border: none;
   margin: 0 25px 10px 0;
   padding: 1rem !important;
 }
+
 
 .download {
   padding-top: 10px;
