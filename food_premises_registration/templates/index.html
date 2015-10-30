@@ -1,5 +1,30 @@
 {% extends "base.html" %}
 
+{% block head_end %}
+
+  <script type="text/javascript" src="{{ url_for('static', filename='javascripts/address-lookup.js') }}"></script>
+
+  <script id="address-template" type="text/x-jsrender">
+    <li><a href="{{ address_register + '/address/{{:address}}' }}" class="address-link">
+    {% raw %}
+      {{if property}}{{:property}},{{/if}}
+      {{if street}}{{:street}},{{/if}}
+      {{if town}}{{:town}},{{/if}}
+      {{if postcode}}{{:postcode}}{{/if}}</a></li>
+    {% endraw %}
+
+    </script>
+
+    <script id="selected-address-template" type="text/x-jsrender">
+    {% raw %}
+      <p class="premises-address">Premises address: {{:address}}</p>
+    {% endraw %}
+
+    </script>
+
+{% endblock %}
+
+
 {% block content %}
 
   <header>
@@ -25,11 +50,23 @@
 
       <div class="row">
         <div class="large-6 columns">
-          <label class="premises-form-label">Food premises</label>
-          <p class="hint">The address of the premises. For a moveable food business, enter where it is kept</p>
-          <input type="text" placeholder="" />
-          <span class="button">Find address</span>
+         <!--  <form id="address-lookup" class="form" method="post"> -->
+            <label class="premises-form-label">Food premises</label>
+            <p class="hint">The address of the premises. For a moveable food business, enter where it is kept</p>
+            <input type="text" id="search" class="form-control" name="search"/>
+            <input id="address-lookup" type="button" value="Find address" class="button">
+       <!--    </form> -->
+          <p class='message'></p>
+          <p id="selected-address">
+          </p>
+          <div id="address-selector" style="display: none">
+            <h3 class="heading-small">Select your address</h3>
+            <div id="address-wrapper">
+              <ul id="addresses">
+              </ul>
+            </div>
           </div>
+        </div>
        </div>
 
 

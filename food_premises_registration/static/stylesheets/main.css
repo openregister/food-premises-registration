@@ -226,6 +226,44 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
+#address-wrapper {
+  height: 250px;
+  border: 1px solid #bfc1c3;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+#address-wrapper ul {
+  margin-left: 0px;
+}
+
+#addresses li {
+  background: #f8f8f8;
+  border: 1px solid #dee0e2;
+  margin: 1px;
+}
+
+#addresses li:hover {
+  border: 1px solid #000;
+}
+
+#addresses li a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+#address-not-found {
+  padding: 20px 0px 0px 45px;
+}
+
+p.premises-address {
+  background: #dee0e2;
+  border: 1px solid #dee0e2;
+  padding: 15px;
+}
+
 @media only screen and (min-width: 40.063em) and (max-width: 64em)  {
   fieldset.filters {
     margin: 1.125rem 0;
