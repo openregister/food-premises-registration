@@ -15,57 +15,31 @@
 
 
 <form>
-
-  
-     
       <div class="row section-row">
         <div class="large-6 columns">
-        <label class="premises-form-label">Trading name of food business</label>
+        <label class="premises-form-label">Establishment name</label>
+            <p class="hint">The trading name of the restaurant, cafe, shop.</p>
             <input type="text" placeholder="" />
-            <h2 class="form-heading">Food business premises</h2>
-            <p class="hint">If a moveable food business, enter where it is kept</p>
         </div>
       </div>
-        <div class="row">
-            <div class="large-6 columns">
-              <label class="premises-form-label">Address of premises</label>
 
-                  <input type="text" placeholder="" />
-            
-               
-                  <span class="button">Find address</span>
-                            </div>     
-         </div>
-      
+      <div class="row">
+        <div class="large-6 columns">
+          <label class="premises-form-label">Food premises</label>
+          <p class="hint">The address of the premises. For a moveable food business, enter where it is kept</p>
+          <input type="text" placeholder="" />
+          <span class="button">Find address</span>
+          </div>
+       </div>
 
 
       <div class="row section-row">
         <div class="large-6 columns">
-        <label class="premises-form-label">Trading name of food business operator</label>
-          <!-- <p class="hint">This is the number given by Companies House</p> -->
+        <label class="premises-form-label">Food business operator</label>
+          <p class="hint">The name of the sole-trader, business partnership, or limited company name operating the premises</p>
             <input type="text" placeholder="" />
-            <!-- <h2 class="form-heading">Head/Registered Office address of food business operator</h2> -->
         </div>
       </div>
-      
-        <div class="row">
-            <div class="large-6 columns">
-              <label class="premises-form-label">Phone number</label>
-                <input type="text" placeholder="" />     
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 columns">
-              <label class="premises-form-label">Email address</label>
-                <input type="text" placeholder="" />     
-            </div>
-        </div>
-        <div class="row">
-            <div class="large-6 columns">
-              <label class="premises-form-label">Fullname of manager</label>
-                <input type="text" placeholder="" />     
-            </div>
-        </div>
 
       <div class="row">
         <div class="large-12 columns">
@@ -74,7 +48,7 @@
       </div>
 
       <div class="row section-row">
-        <div class="large-4 columns">
+        <div class="large-6 columns">
         <label class="premises-form-label">Type of food activity</label>
         <p class="hint">Please tick ALL the boxes that apply</p>
           <label for="checkbox1" class="block-label"><input id="checkbox1" type="checkbox">Staff restaurant/canteen/kitchen</label>
@@ -95,7 +69,6 @@
       </div>
     </div>
 </form>
-        
   </main>
   {% include "footer.html" %}
 {% endblock %}
