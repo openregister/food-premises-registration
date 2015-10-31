@@ -282,8 +282,15 @@ input[type="checkbox"] {
 
 .premises-address {
   background: #f8f8f8;
-  border: 1px solid #dee0e2;
   padding: 20px;
+}
+
+#selected-address span {
+  border: 1px solid #dee0e2;
+}
+
+#selected-address span:hover {
+  border: 1px solid #000;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em)  {
