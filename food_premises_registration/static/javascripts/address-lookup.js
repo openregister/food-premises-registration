@@ -37,8 +37,10 @@ var stuffAddressInPage = function(event) {
     event.stopPropagation();
     $('#selected-address').text('');
     var template = $.templates("#selected-address-template"),
+        data = $(event.currentTarget).data(),
         html = template.render({
-            'address': event.currentTarget.text
+            'address': event.currentTarget.text,
+            'addressId': data.addressId
         });
     $('#selected-address').append(html);
     $('#address-selector').hide();

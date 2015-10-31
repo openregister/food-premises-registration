@@ -251,17 +251,39 @@ input[type="checkbox"] {
   display: block;
   padding: 20px;
   width: 100%;
-  height: 100%;
+  height: 100;
 }
 
 #address-not-found {
   padding: 20px 0px 0px 45px;
 }
 
-p.premises-address {
-  background: #dee0e2;
+#companies {
+  margin-left: 0px;
+  list-style: none;
+}
+
+#companies li {
+  background: #f8f8f8;
   border: 1px solid #dee0e2;
-  padding: 15px;
+  margin: 1px;
+}
+
+#companies li:hover {
+  border: 1px solid #000;
+}
+
+#companies li a {
+  display: block;
+  padding: 20px;
+  width: 100%;
+  height: 100;
+}
+
+.premises-address {
+  background: #f8f8f8;
+  border: 1px solid #dee0e2;
+  padding: 20px;
 }
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em)  {
